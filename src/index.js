@@ -125,7 +125,7 @@ class Optimize {
           includePaths: [],
           ignore: [],
           minify: true,
-          plugins: [],
+          plugins: [require('esmify')],
           prefix: '_optimize',
           presets: [[require.resolve('@babel/preset-env'), {
             targets: {
